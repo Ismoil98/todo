@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="./styles/bootstrap.min.css">
+	<link rel="stylesheet" href="./styles/main.css">
+	<link rel="shortcut icon" href="./images/my_logo.png">
+	<title>Document</title>
+</head>
+
+<body>
+
+	<div class="container text-center">
+
+		<h1 class="fs-1 mt-5 text-danger">To do list</h1>
+
+		<form class="todo__form mt-5">
+			<input class="todo__input" type="text" placeholder="Write plans" />
+
+			<button class="todo__submit-btn btn-danger text-warning rounded-1" type="submit">Add</button>
+		</form>
+
+		<ul class="todo__list list-unstyled"></ul>
+
+		<div class="todo__controls">
+			<button class="btnAll btn-danger text-warning rounded-1">
+				All <strong class="allCount">0</strong>
+			</button>
+			<button class="btnCompleted btn-danger text-warning rounded-1">
+				Completed <strong class="completedCount">0</strong>
+			</button>
+			<button class="btnUncompleted btn-danger text-warning rounded-1">
+				Uncompleted <strong class="uncompletedCount">0</strong>
+			</button>
+		</div>
+	</div>
+
+	<script src="js/main.js"></script>
+</body>
+
+</html>
